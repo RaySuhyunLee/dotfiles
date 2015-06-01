@@ -33,6 +33,12 @@ Plugin 'othree/html5.vim'
 Plugin 'wting/rust.vim'
 Plugin 'kchmck/vim-coffee-script'
 
+Plugin 'sudar/vim-arduino-syntax'
+
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-scripts/srcexpl'
+
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,6 +57,7 @@ filetype plugin indent on    " required
 " " Put your non-Plugin stuff after this line
 
 set number
+set mouse=a
 set ai
 set si
 set hlsearch
@@ -61,7 +68,10 @@ se enc=utf8
 set ts=2
 set sw=2
 set sts=2
+set backspace=indent,eol,start
 
 let g:seoul256_background = 237
 colors seoul256 
 
+let g:neocomplete#enable_at_startup = 1
+let g:Tlist_Auto_Open = 1

@@ -4,4 +4,4 @@
 
 NAME=$(git branch | grep '*' | sed 's/* //')
 
-echo "$NAME"': '$(cat "$1") > "$1"
+echo -n "$NAME"': '|cat - "$1" > .tmp && mv .tmp "$1"

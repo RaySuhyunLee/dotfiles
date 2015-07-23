@@ -2,7 +2,8 @@ function EXT_COLOR () { echo -ne "\033[38;5;$1m"; }
 
 export PS1="`EXT_COLOR 187`[\u@\h \W]\$ \e[m"
 
-alias c="clear;l"
+alias c="clear"
+alias cl="clear;l"
 
 # for ls
 alias l='ls'

@@ -1,20 +1,20 @@
-# install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+sudo apt-get update
+
 # install git
-brew install git
+sudo apt-get install git
 # install tmux
-brew install tmux
+sudo apt-get install tmux
 # install ruby
-brew install ruby
+sudo apt-get install ruby
 # install vim
-brew install vim --with-lua
+sudo apt-get install vim --with-lua
 # install Vundle. Type :PluginInstall in vim after installation
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Install ctags
-brew install ctags
+sudo apt-get install ctags
 
 # install zsh
-brew install zsh
+sudo apt-get install zsh
 # install zgen
 mkdir ~/.dotfiles
 cp dotfiles/zgen.zsh ~/.dotfiles/zgen.zsh

@@ -1,0 +1,53 @@
+source ~/.dotfiles/zgen.zsh
+if ! zgen saved; then
+	echo "Creating a zgen save"
+
+	zgen oh-my-zsh
+	zgen oh-my-zsh plugins/cp
+	zgen oh-my-zsh plugins/git
+	zgen oh-my-zsh plugins/mosh
+	zgen oh-my-zsh plugins/command-not-found
+	zgen load zsh-users/zsh-completions src
+	zgen load zsh-users/zsh-syntax-highlighting
+	zgen oh-my-zsh themes/agnoster
+	zgen save
+fi
+
+#export TERM=xterm-256color
+export ZSH_THEME=agnoster
+export DEFAULT_USER="$USER"
+
+alias c="clear"
+alias cl="clear;l"
+
+# for ls
+alias l='ls'
+alias la='ls -a'
+alias ll='ls -lh'
+
+# for tmux
+alias t='tmux'
+alias ta='tmux attach'
+alias tl='tmux ls'
+
+alias vi='vim'
+
+# for git
+# for mac old version problem
+#export PATH="$(find /usr/local/Cellar -type d -name bin):${PATH}"
+
+alias gi='git'
+alias gpp="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias ga="git add"
+alias grm="git rm"
+alias gb="git branch"
+alias gst="git status"
+alias gc="git commit"
+alias gp="git push"
+alias gm="git merge"
+alias gf="git fetch"
+alias gch="git checkout"
+
+alias suvi="sudo -E vi"
+
+

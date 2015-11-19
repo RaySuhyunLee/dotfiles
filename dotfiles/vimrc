@@ -69,6 +69,7 @@ set ts=2
 set sw=2
 set sts=2
 set backspace=indent,eol,start
+set completeopt-=preview
 
 let g:seoul256_background = 237
 colors seoul256 

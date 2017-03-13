@@ -47,7 +47,9 @@ alias gp="git push"
 alias gm="git merge"
 alias gf="git fetch"
 alias gch="git checkout"
+alias gfile="git diff --cached --name-only --"
 
 alias suvi="sudo -E vi"
 
+alias pip3="python3 -m pip"
 

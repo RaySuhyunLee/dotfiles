@@ -6,7 +6,7 @@ sudo apt-get install git
 sudo apt-get install tmux
 # install ruby
 sudo apt-get install ruby
-# install vim
+# install vim (lua supported)
 sudo apt-get install vim --with-lua
 
 ln dotfiles/vimrc ~/.vimrc
@@ -23,13 +23,15 @@ cp dotfiles/zgen.zsh ~/.dotfiles/zgen.zsh
 # set zsh as default shell
 sudo "$(cat /etc/shells)\n/usr/local/bin/zsh" > /etc/shells
 chsh -s /usr/local/bin/zsh
-# Now Apply Solarized Theme to terminal.
-# https://github.com/altercation/solarized
-# You also need Powerline-patched font.
-# https://gist.github.com/baopham/1838072#file-monaco-for-powerline-otf
 
-ln dotfiles/zshrc ~/.zshrc
-#ln dotfiles/bash_profile ~/.bash_profile
+# make symbolic links for dotfiles
+ln -s dotfiles/zshrc ~/.zshrc
+ln -s dotfiles/bash_profile ~/.bash_profile
+ln -s dotfiles/tmux.conf ~/.tmux.conf
 
-ln dotfiles/tmux.conf ~/.tmux.conf
+
+echo Now Apply Solarized Theme to terminal.
+echo https://github.com/altercation/solarized
+echo You also need Powerline-patched font.
+echo https://gist.github.com/baopham/1838072#file-monaco-for-powerline-otf
 

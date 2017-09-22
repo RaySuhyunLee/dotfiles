@@ -1,30 +1,32 @@
-# MySettings
-My own cli settings.
+# dotfiles
+My own cli environment settings.
 
 ## Supported Platforms
 * Mac
 * Debian/Ubuntu(or other similar debian based linux)
 
 ## Installation
+You can install basic settings using auto installer, 
+or choose manually what you need.
 
 ### Default Installation
 
 ```sh
-git clone https://github.com/raysuhyunlee/MySettings.git ~/.MySettings
-cd ~/.MySettings
+git clone https://github.com/raysuhyunlee/dotfiles.git ~/dotfiles
+cd ~/dotfiles
 
 sh install_mac.sh # for mac
 sh install_debian.sh # for debian based linux
 ```
 
 ### Additional Setups
-Currently MySettings supports following additional features:
+Currently MySettings comes with following additional settings:
 
 * settings for shell
 * handy aliases for shell
 
 ```sh
-# cd ~/.MySettings
+# cd ~/dotfiles
 cat dotfiles/alias >> ~/.bash_profile # if you use bash
 cat dotfiles/alias >> ~/.zshrc # if you use zsh
 ```
@@ -32,13 +34,9 @@ cat dotfiles/alias >> ~/.zshrc # if you use zsh
 Super Simple!
 
 ### Update
-Newest version of MySettings can be found on master branch.
+Newest version of dotfiles can be found on master branch.
 
 ```sh
-# cd ~/.MySettings
+# cd ~/dotfiles
 git fetch origin master
-# ???
 ```
-
-But then...what? To be honest, since MySettings is simplely a set of dotfiles and scripts, I don't have no idea what should be done on future update. If you have any question please post an issue.
-

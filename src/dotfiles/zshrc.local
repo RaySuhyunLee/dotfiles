@@ -1,7 +1,7 @@
 # shell alias list
 
 alias gi='git'
-alias gpp="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias glp="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias ga="git add"
 alias grm="git rm"
 alias gb="git branch"
@@ -11,8 +11,10 @@ alias gp="git push"
 alias gm="git merge"
 alias gf="git fetch"
 alias gch="git checkout"
-alias gfile="git diff --cached --name-only --"
+alias gd="git diff --cached --name-only --"
 
 alias suvi="sudo -E vi"
 
 alias pip3="python3 -m pip"
+
+alias k="kubectl"
